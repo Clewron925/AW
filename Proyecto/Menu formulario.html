@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto web</title>
+    <link rel="stylesheet" href="./Menu formulario.css">
+    <link rel="icon" href="./img proyecto/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap" rel="stylesheet">
+    <script>
+      function Mostrar() {
+          var x = document.getElementById("pass");
+          if (x.type === "password") {
+              x.type = "text";
+          } else {
+              x.type = "password";
+          }
+      }
+    </script>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+        <a class="carcasalogo" href="./DanielGómezProyecto.html"><img class="toyotalogo" src="./img proyecto/toyota logo.png" alt="No se pudo cargar la imagen"></a>
+        <audio loop controls auto>
+          <source src="./audio proyecto/kiss.mp3" type="audio/mp3">
+        </audio>
+        <div class="subnav">
+          <button class="subnavbtn">Modelos<i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="./Menu gt86.html">GT86</a>
+            <a href="./Menu GR Supra.html">GR Supra</a>
+            <a href="./Hilux GX.html">Hilux GX</a>
+          </div>
+        </div> 
+        <div class="subnav">
+          <button class="subnavbtn">Contactanos si buscas empleo<i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="./Menu formulario.html">Contacto</a>
+          </div>
+        </div> 
+        <div class="subnav">
+          <button class="subnavbtn">Donde encontrarnos<i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="./Menu España.html">España</a>
+            <a href="./Menu Francia.html">Francia</a>
+            <a href="./Menu Alemania.html">Alemania</a>
+          </div>
+        </div>
+        <div class="subnav">
+          <button class="subnavbtn">Sobre nosotros<i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="./Menu sobre nosotros.html">Información sobre nosotros</a>
+          </div>
+        </div>
+        <div class="subnav">
+          <button class="subnavbtn">Seguros<i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="./Menu seguro.html">Seguros Toyota</a>
+          </div>
+      </div>
+</header>
+    <div class="bienvenido">
+      <h1>TRABAJA A NUESTRO LADO Y JUNTOS CAMBIAREMOS EL MUNDO</h1>
+      <h2>FORMATE EN TOYOTA</h2>
+      <p>A continuacion le dejamos un formulario para que lo rellene y asi poder contar con usted</p>
+    </div>
+    <form action="contacto.php" method="post" class="formulario" target="_blank">
+      <h1 class="ingresatusdatos">INGRESA AQUÍ TUS DATOS</h1>
+      <label for="nombre">Nombre</label>
+      <input class="nombre" type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+      <label for="email">Correo Electronico</label>
+      <input class="email" type="text" name="email" id="email" placeholder="Escribe tu email">
+      <label for="Telefono">Teléfono</label>
+      <input class="telefono" type="text" name="Teléfono" id="Teléfono" placeholder="Escribe tu Teléfono">
+      <label for="Telefono">Tus facultades</label>
+      <input class="facultades" type="text" name="facultades" id="facultades" placeholder="Escribe tus facultades">
+      <br>
+      <select name="lista" id="lista">
+          <option value="España" selected>España</option>
+          <option value="Italia">Italia</option>
+          <option value="Portugal">Portugal</option>
+          <option value="Canadá">Canadá</option>
+          <option value="Irlanda">Irlanda</option>
+          <option value="Suiza">Suiza</option>
+          <option value="Australia">Australia</option>
+      </select>
+      <br>
+      <div class="z">
+          <input class="contraseña" type="password" name="pass" id="pass" placeholder="Escribe la contraseña de tu email">
+          <input type="checkbox" onclick="Mostrar()">
+      </div>
+      <br>
+      <input class="enviar" type="submit" value="Enviar">
+  </form>
+</body>
+</html>

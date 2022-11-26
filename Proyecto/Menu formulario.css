@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body{
+    height: 1200px;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Oswald', sans-serif;
+    background-image: url(https://www.fmfuego.com.ar/galeria/fotos/2022/09/26/o_1664197123.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar{
+    overflow: hidden;
+    background-color: #333;
+}
+  
+.navbar a{
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.subnav{
+    float: left;
+    overflow: hidden;
+    font-size: 30px;
+}
+  
+.subnav .subnavbtn{
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+  
+.navbar a:hover, .subnav:hover .subnavbtn{
+    background-color: rgb(255, 0, 0);
+    transform: scale(0.9);
+    transition: all 0.5s ease;
+}
+  
+.subnav-content{
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgb(255, 0, 0);
+    width: 100%;
+    z-index: 1;
+}
+  
+.subnav-content a{
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+  
+.subnav-content a:hover{
+    background-color: #eee;
+    color: black;
+    transform: scale(0.9);
+    transition: all 0.5s ease;
+} 
+.subnav:hover .subnav-content{
+    display: block;   
+}
+
+.toyotalogo{
+    float: left;
+    width: 60px;
+}
+
+.bienvenido{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    margin-top: 40px;
+    padding: 2%;
+    width: 100%;
+    text-align: center;
+}
+
+audio{
+    float: right;
+    margin-top: 5px;
+    width: 15%;
+}
+
+.ingresatusdatos{
+    text-align: center;
+    text-decoration: underline black;
+    margin-bottom: 20px;
+}
+
+.formulario{
+    width: 50%;
+    margin: 20px auto 0px auto;
+    background-color: red;
+    padding: 30px;
+    border: 10px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px;
+}
+
+fieldset{
+    padding: 20px;
+    margin: 20px;
+}
+
+.cajapass{
+    display: flex;
+}
+
+.nombre,.email,.telefono,.facultades{
+    text-align: center;
+    border-radius: 20px;
+}
+
+select{
+    text-align: center;
+    border-radius: 20px;
+}
+
+.contraseña{
+    text-align: center;
+    width: 70%;
+    border-radius: 20px;
+}
+
+label{
+    font-weight: bold;
+}
+
+.enviar{
+    border-radius: 20px;
+}
